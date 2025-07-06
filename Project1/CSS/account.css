@@ -1,0 +1,30 @@
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 450px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.double-input {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.label-align {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+  gap: 10px;
+}
+
+.double {
+  width: 100%;
+}
+
+.account_form {
+  max-width: 300px;
+}

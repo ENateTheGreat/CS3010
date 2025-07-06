@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../CSS/index.css">
+  <link rel="stylesheet" href="../CSS/account.css">
+  <script type="module" src="../JS/account.js"></script>
+</head>
+<body>
+  <header>
+    <h1 id="title">Tokay Talk</h1>
+    <div id="nav-buttons">
+      <a href="./home.html" class="nav-button">Home</a>
+    </div>
+  </header>
+  <main>
+    <div id="account-form">
+      <form class="account-form" action="submit">
+        <div class="double-input">
+          <div class="label-align">
+            <label for="firstName">First Name</label>
+            <input 
+              class="form double"
+              type="text" 
+              name="firstName"
+              placeholder="Enter your first name"
+              id="firstName-account"
+            />
+          </div>
+          <div class="label-align">
+            <label for="lastName">Last Name</label>
+            <input 
+              class="form double"
+              type="text"
+              name="lastName"
+              placeholder="Enter your last name"
+              id="lastName-account"
+            />
+          </div>
+        </div>
+          <label for="address1">Address Line 1</label>
+          <input 
+            type="text" 
+            name="address1"
+            class="form"
+            placeholder="Address Line 1"
+            id="address1-account"
+          />
+        <label for="address2">Address Line 2</label>
+        <input 
+          type="text" 
+          class="form"
+          name="address2"
+          placeholder="Address Line 2"
+          id="address2-account"
+        />
+        <div class="double-input">
+          <div class="label-align">
+            <label for="city">City</label>
+            <input 
+              class="form"
+              type="text" 
+              name="city"
+              placeholder="Enter your city"
+              id="city-account"
+            />
+          </div>
+          <div class="label-align">
+            <label for="state">State</label>
+            <select 
+              class="form"
+              name="state"
+              id="state-account"
+            >
+            <option value="" disabled selected>Select a state</option>
+            </select>
+          </div>
+        </div>
+        <label for="zip">Zip Code</label>
+        <input 
+          type="number" 
+          class="form"
+          name="zip"
+          placeholder="Enter your zip code"
+          id="zip-account"
+        />
+        <label for="phone">Phone Number</label>
+        <input 
+          type="number" 
+          class="form"
+          name="phone"
+          placeholder="Enter your phone number"
+          id="phone-account"
+        />
+        <label for="email">Email</label>
+        <input 
+          type="text"
+          class="form" 
+          name="email"
+          placeholder="Enter your email address"
+          id="email-account"
+        />
+        <div class="button-group">
+          <button id="account-reset" class="nav-button">Reset</button>
+          <button type="submit" id="account-submit" class="nav-button">Submit</button>
+        </div>
+        <div id="account-error" style="color: red;"></div>
+      </form>
+    </div>
+  </main>
+</body>
+</html>

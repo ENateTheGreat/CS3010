@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../CSS/registration.css">
+  <link rel="stylesheet" href="../CSS/index.css">
+  <script src="../JS/registration.js"></script>
+</head>
+<body>
+  <div>
+    <header>
+      <h1 id="title">Tokay Talk</h1>
+      <div id="nav-buttons">
+        <a href="./home.html" class="nav-button">Home</a>
+      </div>
+    </header>
+    <main>
+      <div id="registration-header">
+        <h1>Registration</h1>
+      </div>
+      <div id="registration-form">
+        <form action="submit">
+          <label for="username">Username</label>
+          <input 
+            type="text"
+            placeholder="Enter your username"
+            aria-label="Username field"
+            name="username"
+            class="form"
+            id="username-registration"
+          />
+          <label for="password">Password</label>
+          <input 
+            type="password"
+            placeholder="Enter your password"
+            aria-label="Password field"
+            name="password"
+            class="form"
+            id="password-registration"
+          />
+          <label for="passwordConfirm">Confirm Password</label>
+          <input 
+            type="password"
+            placeholder="Confirm your password"
+            aria-label="Password confirmation field"
+            name="passwordConfirm"
+            class="form"
+            id="password-confirm-registration"
+          />
+          <div id="buttons-group">
+            <button type="button" id="registration-reset" class="nav-button">Reset</button>
+            <button type="submit" id="registration-submit" class="nav-button">Submit</button>
+          </div>
+          <!-- once compleed, the registration will redirect to the login page -->
+          <div id="registration-error" style="color: red;"></div>
+        </form>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
+<!-- Could add a timeout to simulate requests -->

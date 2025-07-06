@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="../JS/login.js"></script>
+  <link rel="stylesheet" href="../CSS/index.css">
+  <link rel="stylesheet" href="../CSS/login.css">
+</head>
+<body>
+  <header>
+    <h1 id="title">Tokay Talk</h1>
+    <div id="nav-buttons">
+      <a href="./home.html" class="nav-button">Home</a>
+      <a href="./registration.html" class="nav-button">Register</a>
+    </div>
+  </header>
+  <main>
+    <div id="login-form">
+      <form action="submit">
+        <label for="username">Username</label>
+        <input 
+          type="text" 
+          name="username"
+          class="form"
+          id="username-login"
+        />
+        <label for="password">Password</label>
+        <input 
+          type="password" 
+          name="password"
+          class="form"
+          id="password-login"
+        />
+        <div class="buttons-group">
+          <button id="login-reset" class="nav-button">Reset</button>
+          <button type="submit" class="nav-button">Submit</button>
+        </div>
+        <div id="login-error" style="color: red;"></div>
+      </form>
+    </div>
+  </main>
+</body>
+</html>
+<!-- Could add a timeout to simulate requests -->
