@@ -1,0 +1,255 @@
+#root {
+  min-height: 100vh;
+}
+
+.App {
+  text-align: center;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.login-form {
+  width: 100%;
+  /* max-width: 400px; */
+  margin: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.account-form {
+  width: 100%;
+  max-width: 500px; /* Add consistent container width */
+  margin: 0 auto; /* Center the form container */
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch; /* Change from center to stretch */
+  gap: 15px; /* Add consistent spacing */
+}
+
+.double-input {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  width: 100%; /* Ensure full width usage */
+}
+
+.label-align {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+  gap: 10px;
+}
+
+.buttons-group {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 15px;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Stylesheet for all pages, uniformity of like components */
+
+#nav-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.nav-button {
+  padding: 10px 20px;
+  background-color: rgb(238, 189, 144);
+  color: black;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  border: none;
+}
+
+html {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(-45deg, rgb(158, 214, 252), #6e9cd1);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.form {
+  margin-top: -10px;
+  margin-bottom: 10px;
+  background-color: rgb(238, 189, 144);
+  border-radius: 5px;
+  border: none;
+  height: 30px;
+  font-size: 15px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  width: 100%; /* Ensure inputs take full available width */
+  box-sizing: border-box; /* Include padding/border in width calculation */
+}
+
+.form:focus {
+  box-shadow: 0 0 15px 10px rgba(255, 179, 65, 0.5);
+  outline: none
+}
+
+label {
+  color: #2c3e50;
+  font-weight: 600;
+  font-size: 16px;
+  margin-bottom: 5px;
+  display: block;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+main div {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+footer {
+  margin-top: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header {
+  display: flex;
+  height: 60px;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#title {
+  margin-left: 15px;
+}
+
+.button-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* Tablet Styles */
+@media (min-width: 768px) {
+  header {
+    padding: 1.5rem 2rem;
+  }
+
+  #title {
+    font-size: 2rem;
+  }
+
+  main div {
+    padding: 0;
+  }
+
+  footer {
+    padding: 1.5rem 2rem;
+  }
+}
+
+/* Mobile styles */
+@media (max-width: 767px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+    padding: 1rem;
+    height: auto;
+  }
+
+  #title {
+    font-size: 1.5rem;
+    margin: 0;
+    order: 1;
+  }
+
+  #nav-buttons {
+    justify-content: center;
+    width: 100%;
+    order: 2;
+  }
+
+  .nav-button {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+
+  main {
+    padding: 1rem 0;
+  }
+
+  main div {
+    padding: 0 1rem;
+  }
+
+  footer {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+    padding: 1.5rem 1rem;
+  }
+
+  footer a {
+    order: 1;
+  }
+
+  footer p {
+    order: 2
+  }
+}

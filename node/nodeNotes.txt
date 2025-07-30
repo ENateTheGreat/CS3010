@@ -1,0 +1,6 @@
+node js is js that runs on the server
+
+node is JS backend tech
+
+const http = require('http')
+left off on getting started
